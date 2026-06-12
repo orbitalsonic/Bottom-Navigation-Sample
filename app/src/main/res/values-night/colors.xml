@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary Colors -->
+    <color name="primary50">#172554</color>
+    <color name="primary100">#1E3A8A</color>
+    <color name="primary200">#1E40AF</color>
+    <color name="primary300">#1D4ED8</color>
+    <color name="primary400">#2563EB</color>
+    <color name="primary500">#60A5FA</color>
+    <color name="primary600">#93C5FD</color>
+    <color name="primary700">#BFDBFE</color>
+    <color name="primary800">#DBEAFE</color>
+    <color name="primary900">#EFF6FF</color>
+
+    <!-- Secondary Colors -->
+    <color name="secondary50">#164E63</color>
+    <color name="secondary100">#155E75</color>
+    <color name="secondary200">#0E7490</color>
+    <color name="secondary300">#0891B2</color>
+    <color name="secondary400">#06B6D4</color>
+    <color name="secondary500">#22D3EE</color>
+    <color name="secondary600">#67E8F9</color>
+    <color name="secondary700">#A5F3FC</color>
+    <color name="secondary800">#CFFAFE</color>
+    <color name="secondary900">#ECFEFF</color>
+
+    <!-- Background -->
+    <color name="background">#0F172A</color>
+    <color name="onBackground">#F8FAFC</color>
+
+    <!-- Surface -->
+    <color name="surface">#1E293B</color>
+    <color name="onSurface">#F8FAFC</color>
+
+    <!-- Card -->
+    <color name="cardBackground">#1E293B</color>
+    <color name="onCard">#F8FAFC</color>
+
+    <!-- Toolbar -->
+    <color name="toolbarBackground">#0F172A</color>
+    <color name="onToolbar">#F8FAFC</color>
+
+    <!-- Bottom Nav -->
+    <color name="bottomNavBackground">#1E293B</color>
+    <color name="bottomNavSelected">#60A5FA</color>
+    <color name="bottomNavUnselected">#94A3B8</color>
+    <color name="bottomNavDivider">#334155</color>
+
+    <!-- Status -->
+    <color name="error">#F87171</color>
+    <color name="success">#4ADE80</color>
+    <color name="warning">#FBBF24</color>
+
+    <!-- Outline -->
+    <color name="outline">#475569</color>
+
+    <!-- Misc -->
+    <color name="divider">#334155</color>
+    <color name="iconTint">#CBD5E1</color>
+    <color name="disabled">#64748B</color>
+</resources>

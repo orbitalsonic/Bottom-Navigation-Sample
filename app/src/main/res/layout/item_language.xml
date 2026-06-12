@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lang_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_15sdp"
+    android:layout_marginVertical="@dimen/_4sdp"
+    android:background="@drawable/bg_lang_unselected"
+    android:paddingHorizontal="@dimen/_15sdp"
+    android:paddingVertical="@dimen/_12sdp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_flag"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:importantForAccessibility="no"
+        android:layout_gravity="center"
+        tools:srcCompat="@drawable/flag_united_states_america" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtv_language_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/inter_regular"
+        android:maxLines="1"
+        android:paddingHorizontal="@dimen/_10sdp"
+        tools:text="English"
+        android:textColor="@color/onCard"
+        android:textSize="@dimen/_12ssp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        />
+
+    <ImageView
+        android:id="@+id/iv_lang_checked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_lang_radio_checked" />
+
+</LinearLayout>

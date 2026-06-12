@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.orbitalsonic.bottomnavsample.presentation.features.home.HomeFragment"
+        android:label="@string/tab_home"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/moreFragment"
+        android:name="com.orbitalsonic.bottomnavsample.presentation.features.more.MoreFragment"
+        android:label="@string/tab_more"
+        tools:layout="@layout/fragment_more"/>
+    <fragment
+        android:id="@+id/appsFragment"
+        android:name="com.orbitalsonic.bottomnavsample.presentation.features.apps.AppsFragment"
+        android:label="@string/tab_apps"
+        tools:layout="@layout/fragment_apps"/>
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="com.orbitalsonic.bottomnavsample.presentation.features.test.TestFragment"
+        android:label="@string/tab_test"
+        tools:layout="@layout/fragment_test"/>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.orbitalsonic.bottomnavsample.presentation.extras.settings.SettingsFragment"
+        android:label="@string/tab_settings"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_settingsFragment_to_languageFragment"
+            app:destination="@id/languageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.orbitalsonic.bottomnavsample.presentation.extras.language.LanguageFragment"
+        android:label="Language"
+        tools:layout="@layout/fragment_language"/>
+</navigation>
