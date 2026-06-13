@@ -17,7 +17,7 @@
         tools:layout="@layout/fragment_more"/>
     <fragment
         android:id="@+id/appsFragment"
-        android:name="com.orbitalsonic.bottomnavsample.presentation.features.apps.AppsFragment"
+        android:name="com.orbitalsonic.bottomnavsample.presentation.features.apps.ui.AppsFragment"
         android:label="@string/apps"
         tools:layout="@layout/fragment_apps"/>
     <fragment

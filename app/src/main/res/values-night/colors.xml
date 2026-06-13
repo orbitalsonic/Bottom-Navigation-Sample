@@ -36,8 +36,8 @@
     <color name="onSurface">#F8FAFC</color>
 
     <!-- Card -->
-    <color name="cardBackground">#1E293B</color>
-    <color name="cardRipple">#162132</color>
+    <color name="cardBackground">#0F172A</color>
+    <color name="cardRipple">#0A1224</color>
     <color name="onCard">#F8FAFC</color>
 
     <!-- Toolbar -->
