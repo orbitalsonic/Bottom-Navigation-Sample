@@ -117,7 +117,19 @@ fun Activity?.support() {
     }
 }
 
-
+fun Activity?.feedback() {
+    this?.let {
+        val emailIntent = Intent(Intent.ACTION_SENDTO).apply {
+            data = Uri.parse("mailto:${it.getString(R.string.support_email)}")
+            putExtra(Intent.EXTRA_SUBJECT, "Feedback: ${it.getString(R.string.app_name)}")
+        }
+        try {
+            it.startActivity(emailIntent)
+        } catch (ex: ActivityNotFoundException) {
+            ex.printStackTrace()
+        }
+    }
+}
 
 fun Activity?.bugReport(text:String) {
     this?.let {

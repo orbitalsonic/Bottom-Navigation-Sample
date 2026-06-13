@@ -37,6 +37,7 @@
 
     <!-- Card -->
     <color name="cardBackground">#FFFFFF</color>
+    <color name="cardRipple">#F5F3F3</color>
     <color name="onCard">#0F172A</color>
 
     <!-- Toolbar -->
