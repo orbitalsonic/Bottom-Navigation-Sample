@@ -64,12 +64,6 @@ class SettingsFragment : BaseFragment<FragmentSettingsBinding>(FragmentSettingsB
         return stringBuilder.toString()
     }
 
-    private fun updateDarkModeUi() {
-        val isDark = diComponent.sharedPrefManager.isAppDarkModeEnabled
-        binding.topDarkModeIcon.setImageResource(if (isDark == 0) R.drawable.ic_st_mode_light else R.drawable.ic_st_mode_dark)
-        binding.topDarkModeText.setText(if (isDark == 0) R.string.item_light_mode else R.string.item_dark_mode)
-    }
-
     private fun onLanguage(){
         val action = SettingsFragmentDirections.actionSettingsFragmentToLanguageFragment()
         navigateTo(R.id.settingsFragment,action)
@@ -85,6 +79,12 @@ class SettingsFragment : BaseFragment<FragmentSettingsBinding>(FragmentSettingsB
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
             }
         }
+    }
+
+    private fun updateDarkModeUi() {
+        val isDark = diComponent.sharedPrefManager.isAppDarkModeEnabled == 0
+        binding.topDarkModeIcon.setImageResource(if (isDark) R.drawable.ic_st_mode_light else R.drawable.ic_st_mode_dark)
+        binding.topDarkModeText.setText(if (isDark) R.string.item_light_mode else R.string.item_dark_mode)
     }
 
     private fun onRateApp() {
